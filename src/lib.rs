@@ -64,20 +64,6 @@ impl Config {
             }
         }
 
-        // while let Some(arg) = args.next() {
-        //     match arg.as_str() {
-        //         "--query" => {
-        //             query = args.next();
-        //         }
-        //         "--file" => {
-        //             filename = args.next();
-        //         }
-        //         _ => {
-        //             return Err("Unknown Argument Given: try --help");
-        //         }
-        //     }
-        // }
-
         if query.is_none() || filename.is_none() {
             return Err("Missing required arguments");
         }
